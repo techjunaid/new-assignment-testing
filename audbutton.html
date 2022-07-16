@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Button</title>
+
+    </head>
+    <body>
+       <button onclick="song()">click me</button> 
+       <audio id="aud" >
+           <source src = "track.mp3" type="audio/mp3">
+       </audio>
+
+
+        <script>
+       
+        // function hello(){
+        //     document.write("<b>Junaid Chaudhary this side :</b>");
+        
+
+        // confirm("Do you want to play Music ?");
+
+            var audio = document.getElementById("aud");
+            function song(){
+                prompt("Enter Your Name :");
+                var a =  confirm("Do you want to play Music ?");
+                if (a){
+                audio.play();
+                }
+            
+            }
+            
+            
+        
+           
+    
+        </script>
+    </body>
+</html>
